@@ -33,6 +33,7 @@ public class ScoreBoard extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 MainFrame.toMainMenu();
                 SnakeGame.reset();
+                MainMenu.startMusic();
             }
         });
         buttonPanel.add(backBtn, BorderLayout.EAST);

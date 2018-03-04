@@ -26,12 +26,17 @@ public class MainMenu extends JPanel {
     private int startingX = Constants.DEFAULT_WIDTH/4;
     private int startingY = Constants.DEFAULT_HEIGHT/4 + 20;
 
+    //For music
+    private static LoopSound loopSound;
+
     public MainMenu() {
         setPreferredSize(new Dimension(Constants.DEFAULT_WIDTH,
                 Constants.DEFAULT_HEIGHT + Constants.SCOREBOARD_HEIGHT));
         setOpaque(true);
         setBackground(Color.BLACK);
 
+        loopSound = new LoopSound();
+        startMusic();
         addMouseListener(new MouseHandler());
     }
 
@@ -70,11 +75,25 @@ public class MainMenu extends JPanel {
 
     }
 
+    public static void startMusic(){
+        try{
+            loopSound.startMusic("/resource/music/Emotional Titanic Flute.wav");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public static void stopMusic(){
+        loopSound.stopMusic();
+    }
+
     private class MouseHandler extends MouseAdapter{
         @Override
         public void mouseReleased(MouseEvent e) {
             if (startBtn.contains(e.getPoint())){
                 MainFrame.toDisplay();
+                stopMusic();
             }
             else if (highScoreBtn.contains(e.getPoint())){
             }
@@ -83,5 +102,6 @@ public class MainMenu extends JPanel {
             }
         }
     }
+
 }
 
