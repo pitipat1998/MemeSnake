@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e16dc9f-0004-4c4e-bccb-df03a9220531" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/additionalpanel/GameOver.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/LoopSound.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/LoopSound.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu$MouseHandler.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu$MouseHandler.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard$1.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$MoveAction.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$MoveAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$StartGame.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$StartGame.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/resource/music/Emotional Titanic Flute.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" afterPath="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" />
       <change beforePath="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" afterPath="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
       <change beforePath="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" afterPath="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" />
-      <change beforePath="$PROJECT_DIR$/src/maingame/GameDisplay.java" afterPath="$PROJECT_DIR$/src/maingame/GameDisplay.java" />
-      <change beforePath="$PROJECT_DIR$/src/maingame/SnakeGame.java" afterPath="$PROJECT_DIR$/src/maingame/SnakeGame.java" />
-      <change beforePath="$PROJECT_DIR$/src/resource/music/Emotional Titanic Flute.wav" afterPath="$PROJECT_DIR$/src/resource/music/titanicflute.wav" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,14 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/additionalpanel/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
+            <state relative-caret-position="161">
+              <caret line="110" column="75" lean-forward="false" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
               <folding>
-                <element signature="e#2778#2779#0" expanded="true" />
-                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2816#2817#0" expanded="true" />
+                <element signature="e#2853#2854#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameDisplay.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/maingame/GameDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="1097">
               <caret line="183" column="44" lean-forward="true" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
               <folding />
             </state>
@@ -106,8 +91,8 @@
       <file leaf-file-name="ScoreBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+            <state relative-caret-position="-37">
+              <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -147,11 +132,11 @@
         <option value="$PROJECT_DIR$/src/additionalpanel/Sound.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/Videos.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/GameOver.java" />
-        <option value="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/maingame/SnakeGame.java" />
-        <option value="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" />
         <option value="$PROJECT_DIR$/src/maingame/GameDisplay.java" />
+        <option value="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" />
+        <option value="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
       </list>
     </option>
   </component>
@@ -381,12 +366,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520141175955</updated>
       <workItem from="1520141180639" duration="72000" />
-      <workItem from="1520142181537" duration="14252000" />
+      <workItem from="1520142181537" duration="15799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14324000" />
+    <option name="totallyTimeSpent" value="15871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="23" width="1362" height="780" extended-state="6" />
@@ -467,17 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/additionalpanel/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
-          <folding>
-            <element signature="e#2778#2779#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maingame/SnakeGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -497,14 +471,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/additionalpanel/LoopSound.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -519,9 +485,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maingame/GameDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="1097">
           <caret line="183" column="44" lean-forward="true" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37">
+          <caret line="38" column="70" lean-forward="false" selection-start-line="38" selection-start-column="70" selection-end-line="38" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="110" column="75" lean-forward="false" selection-start-line="110" selection-start-column="75" selection-end-line="110" selection-end-column="75" />
+          <folding>
+            <element signature="e#2816#2817#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
+import java.util.Date;
 
 public class MainMenu extends JPanel {
 
@@ -38,7 +39,7 @@ public class MainMenu extends JPanel {
 
         loopSound = new LoopSound();
 
-        startMusic();
+        startMusic("/resource/music/titanicflute.wav");
         addMouseListener(new MouseHandler());
     }
 
@@ -77,9 +78,9 @@ public class MainMenu extends JPanel {
 
     }
 
-    public static void startMusic(){
+    public static void startMusic(String path){
         try{
-            loopSound.startMusic("/resource/music/titanicflute.wav");
+            loopSound.startMusic(path);
         }
         catch (Exception e){
             e.printStackTrace();
@@ -100,7 +101,18 @@ public class MainMenu extends JPanel {
             else if (highScoreBtn.contains(e.getPoint())){
             }
             else if (exitBtn.contains(e.getPoint())){
-                System.exit(0);
+                boolean canExit = false;
+                Date start = new Date();
+
+                stopMusic();
+                startMusic("/resource/music/windowshutdown.wav");
+                while (!canExit){
+                    Date now = new Date();
+                    if((int)((now.getTime() - start.getTime()) / 1000) == 2){
+                        stopMusic();
+                        System.exit(0);
+                    }
+                }
             }
         }
     }

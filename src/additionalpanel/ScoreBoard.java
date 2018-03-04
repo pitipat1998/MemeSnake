@@ -36,7 +36,7 @@ public class ScoreBoard extends JPanel {
                 if (GameOver.getLoopSound().getClip() != null){
                     GameOver.stopMusic();
                 }
-                MainMenu.startMusic();
+                MainMenu.startMusic("/resource/music/titanicflute.wav");
             }
         });
         buttonPanel.add(backBtn, BorderLayout.EAST);
