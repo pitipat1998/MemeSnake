@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e16dc9f-0004-4c4e-bccb-df03a9220531" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/LoopSound.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/MemeSnake/resource/music/Emotional Titanic Flute.wav" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/resource/music/Emotional Titanic Flute.wav" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/additionalpanel/GameOver.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/LoopSound.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/LoopSound.class" />
       <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu$MouseHandler.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu$MouseHandler.class" />
       <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/MainMenu.class" />
       <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard$1.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/additionalpanel/ScoreBoard.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$MoveAction.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$MoveAction.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$StartGame.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay$StartGame.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay.class" afterPath="$PROJECT_DIR$/out/production/MemeSnake/maingame/GameDisplay.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/MemeSnake/resource/music/Emotional Titanic Flute.wav" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" afterPath="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" />
       <change beforePath="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" afterPath="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
       <change beforePath="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" afterPath="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" />
+      <change beforePath="$PROJECT_DIR$/src/maingame/GameDisplay.java" afterPath="$PROJECT_DIR$/src/maingame/GameDisplay.java" />
+      <change beforePath="$PROJECT_DIR$/src/maingame/SnakeGame.java" afterPath="$PROJECT_DIR$/src/maingame/SnakeGame.java" />
+      <change beforePath="$PROJECT_DIR$/src/resource/music/Emotional Titanic Flute.wav" afterPath="$PROJECT_DIR$/src/resource/music/titanicflute.wav" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,15 +43,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/additionalpanel/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="79" column="78" lean-forward="false" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="78" />
+            <state relative-caret-position="-55">
+              <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
               <folding>
-                <element signature="e#2787#2788#0" expanded="true" />
-                <element signature="e#2824#2825#0" expanded="true" />
+                <element signature="e#2778#2779#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameOver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/additionalpanel/GameOver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1025">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1705#1706#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameDisplay.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/maingame/GameDisplay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="183" column="44" lean-forward="true" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SnakeGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/maingame/SnakeGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="145" column="32" lean-forward="false" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -54,12 +92,12 @@
       <file leaf-file-name="LoopSound.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/additionalpanel/LoopSound.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="197">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +106,8 @@
       <file leaf-file-name="ScoreBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            <state relative-caret-position="288">
+              <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -83,6 +121,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/resource/music</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,9 +145,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/SnakeLauncher.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/Sound.java" />
+        <option value="$PROJECT_DIR$/src/additionalpanel/Videos.java" />
+        <option value="$PROJECT_DIR$/src/additionalpanel/GameOver.java" />
+        <option value="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/maingame/SnakeGame.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java" />
         <option value="$PROJECT_DIR$/src/additionalpanel/LoopSound.java" />
-        <option value="$PROJECT_DIR$/src/additionalpanel/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/maingame/GameDisplay.java" />
       </list>
     </option>
   </component>
@@ -159,6 +206,26 @@
               <item name="MemeSnake" type="b2602c69:ProjectViewProjectNode" />
               <item name="MemeSnake" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="maingame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MemeSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MemeSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MemeSnake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MemeSnake" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
               <item name="music" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -314,12 +381,12 @@
       <option name="presentableId" value="Default" />
       <updated>1520141175955</updated>
       <workItem from="1520141180639" duration="72000" />
-      <workItem from="1520142181537" duration="6579000" />
+      <workItem from="1520142181537" duration="14252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6651000" />
+    <option name="totallyTimeSpent" value="14324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="123" y="23" width="1362" height="780" extended-state="6" />
@@ -363,7 +430,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -392,34 +459,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/additionalpanel/LoopSound.java">
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/Videos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+        <state relative-caret-position="144">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/additionalpanel/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="79" column="78" lean-forward="false" selection-start-line="79" selection-start-column="78" selection-end-line="79" selection-end-column="78" />
+        <state relative-caret-position="-55">
+          <caret line="81" column="67" lean-forward="false" selection-start-line="81" selection-start-column="67" selection-end-line="81" selection-end-column="67" />
           <folding>
-            <element signature="e#2787#2788#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="true" />
+            <element signature="e#2778#2779#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maingame/SnakeGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="145" column="32" lean-forward="false" selection-start-line="145" selection-start-column="32" selection-end-line="145" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/GameOver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1705#1706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/ScoreBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="63" lean-forward="false" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/additionalpanel/LoopSound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maingame/GameDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="183" column="44" lean-forward="true" selection-start-line="183" selection-start-column="44" selection-end-line="183" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>

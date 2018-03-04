@@ -11,6 +11,8 @@ public class LoopSound {
         private Clip clip;
         private URL url;
 
+        public Clip getClip(){ return clip; }
+
         public void startMusic(String path) throws Exception{
             url = this.getClass().getResource(path);
             clip = AudioSystem.getClip();

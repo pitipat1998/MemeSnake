@@ -35,7 +35,9 @@ public class MainMenu extends JPanel {
         setOpaque(true);
         setBackground(Color.BLACK);
 
+
         loopSound = new LoopSound();
+
         startMusic();
         addMouseListener(new MouseHandler());
     }
@@ -77,7 +79,7 @@ public class MainMenu extends JPanel {
 
     public static void startMusic(){
         try{
-            loopSound.startMusic("/resource/music/Emotional Titanic Flute.wav");
+            loopSound.startMusic("/resource/music/titanicflute.wav");
         }
         catch (Exception e){
             e.printStackTrace();

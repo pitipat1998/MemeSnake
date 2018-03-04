@@ -142,14 +142,8 @@ public class SnakeGame extends JComponent {
 
     //Used to reset the game when the snake hits the end game conditions
     public static void reset(){
+        GameDisplay.setIsGameOver(true);
         GameDisplay.gameReset();
-        Snake.clearTail();
-        Snake.setHead(Constants.DEFAULT_WIDTH/2- Constants.SCALE,
-                Constants.DEFAULT_HEIGHT/2- Constants.SCALE,
-                Constants.SCALE,
-                Constants.SCALE);
-        Food.randomFood();
-        ScoreBoard.resetScore();
     }
 
 }

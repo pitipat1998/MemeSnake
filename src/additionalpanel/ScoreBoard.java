@@ -2,7 +2,7 @@ package additionalpanel;
 
 import entity.Constants;
 import maindisplay.MainFrame;
-import maingame.SnakeGame;
+import maingame.GameDisplay;
 import sharedactions.BackButton;
 
 import javax.swing.*;
@@ -32,7 +32,10 @@ public class ScoreBoard extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainFrame.toMainMenu();
-                SnakeGame.reset();
+                GameDisplay.gameReset();
+                if (GameOver.getLoopSound().getClip() != null){
+                    GameOver.stopMusic();
+                }
                 MainMenu.startMusic();
             }
         });

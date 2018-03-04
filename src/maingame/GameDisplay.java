@@ -1,7 +1,10 @@
 package maingame;
 
+import additionalpanel.GameOver;
 import entity.Constants;
 import additionalpanel.ScoreBoard;
+import entity.Food;
+import entity.Snake;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,6 +16,10 @@ public class GameDisplay extends JPanel {
 
     //Snake Component
     private static SnakeGame snakeGame;
+
+    //GameOver
+    private static GameOver gameOver;
+    private static boolean isGameOver = false;
 
     //Used to switch between panels
     private static Container container;
@@ -44,6 +51,7 @@ public class GameDisplay extends JPanel {
         snakeGame = new SnakeGame();
         scoreBoard = new ScoreBoard();
         startGameTxt = new JLabel("Press Spacebar to start");
+        gameOver = new GameOver();
 
         snakeGame.setFocusable(true);
 
@@ -68,17 +76,38 @@ public class GameDisplay extends JPanel {
         add(scoreBoard, BorderLayout.PAGE_END);
         container.add("StartGameTxt",startGameTxt);
         container.add("SnakeGame",snakeGame);
+        container.add("GameOver", gameOver);
         add(container);
 
         addKeyListener(new StartGame());
     }
 
+    public static void setIsGameOver(boolean cond){ isGameOver = cond; }
+
+    private static void runGameOver(){
+        cardLayout.show(container, "GameOver");
+        GameOver.startMusic();
+    }
+
     public static void gameReset(){
+        Snake.clearTail();
+        Snake.setHead(Constants.DEFAULT_WIDTH/2- Constants.SCALE,
+                Constants.DEFAULT_HEIGHT/2- Constants.SCALE,
+                Constants.SCALE,
+                Constants.SCALE);
+        Food.randomFood();
         snakeGame.setFocusable(false);
-        //setFocusable(true);
         running = false;
         snakeGame.gameStart(false);
-        cardLayout.show(container, "StartGameTxt");
+        if(isGameOver){
+            runGameOver();
+            isGameOver = false;
+        }
+        else{
+            cardLayout.show(container, "StartGameTxt");
+            ScoreBoard.resetScore();
+        }
+
     }
     //Action class use for the movement of snakeGame
     private class MoveAction extends AbstractAction {
@@ -152,6 +181,8 @@ public class GameDisplay extends JPanel {
                     running = true;
                     snakeGame.gameStart(true);
                     cardLayout.show(GameDisplay.container, "SnakeGame");
+                    ScoreBoard.resetScore();
+                    if(GameOver.getLoopSound().getClip() != null){ GameOver.stopMusic(); }
                 }
             }
         }
