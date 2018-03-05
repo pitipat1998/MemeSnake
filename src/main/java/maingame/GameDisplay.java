@@ -44,6 +44,8 @@ public class GameDisplay extends BigPanelFormat {
         startGamePanel = new StartGamePanel();
         gameOver = new GameOver();
 
+        snakeGame.setFocusable(true);
+
         //fixed panel that doesn't change
         scoreBoard = new ScoreBoard();
 
@@ -53,8 +55,8 @@ public class GameDisplay extends BigPanelFormat {
         container.add("GameOver", gameOver);
 
         //add component to this panel
-        add(container, BorderLayout.CENTER);
         add(scoreBoard, BorderLayout.PAGE_END);
+        add(container, BorderLayout.CENTER);
 
         addKeyListener(new StartGame());
     }
@@ -70,7 +72,6 @@ public class GameDisplay extends BigPanelFormat {
         running = true;
         snakeGame.gameStart(true);
         cardLayout.show(GameDisplay.container, "SnakeGame");
-        snakeGame.requestFocusInWindow();
     }
 
     private static void toStartGamePanel(){
