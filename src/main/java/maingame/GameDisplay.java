@@ -86,6 +86,10 @@ public class GameDisplay extends BigPanelFormat {
                 Constants.SCALE,
                 Constants.SCALE);
         Food.randomFood();
+        Food.refillMemeFood();
+        Food.setCurrentScore(0);
+        SnakeGame.resetAllScore();
+        snakeGame.setRunningNyanCat(false);
         snakeGame.setFocusable(false);
         running = false;
         snakeGame.gameStart(false);
@@ -110,6 +114,7 @@ public class GameDisplay extends BigPanelFormat {
         public void keyReleased(KeyEvent e) {
             if(e.getKeyCode() == KeyEvent.VK_SPACE){
                 if (!running){
+//                    gameReset();
                     ScoreBoard.resetScore();
                     toSnakeGame();
                     if(GameOver.getLoopSound().getClip() != null){ GameOver.stopMusic(); }

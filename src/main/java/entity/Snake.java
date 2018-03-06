@@ -38,8 +38,8 @@ public class Snake {
     public static Rectangle2D tailFactory(Rectangle2D rect){
         double x = rect.getX();
         double y = rect.getY();
-        double w = rect.getWidth();
-        double h = rect.getHeight();
+        double w = Constants.SCALE;
+        double h = Constants.SCALE;
         return new Rectangle2D.Double(x,y,w,h);
     }
 

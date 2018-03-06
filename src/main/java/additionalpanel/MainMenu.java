@@ -10,7 +10,6 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
-import java.util.Date;
 
 public class MainMenu extends BigPanelFormat implements MusicPlayer{
 
@@ -99,17 +98,16 @@ public class MainMenu extends BigPanelFormat implements MusicPlayer{
             else if (highScoreBtn.contains(e.getPoint())){
             }
             else if (exitBtn.contains(e.getPoint())){
-                boolean canExit = false;
-                Date start = new Date();
-
+                //boolean canExit = false;
                 stopMusic();
                 startMusic("music/windowshutdown.wav");
-                while (!canExit){
-                    Date now = new Date();
-                    if((int)((now.getTime() - start.getTime()) / 1000) == 2){
-                        stopMusic();
-                        System.exit(0);
-                    }
+                try{
+                    Thread.sleep(2000);
+                    stopMusic();
+                }catch (Exception e1){
+                    e1.printStackTrace();
+                }finally {
+                    System.exit(0);
                 }
             }
         }

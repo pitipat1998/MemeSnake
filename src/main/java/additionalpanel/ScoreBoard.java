@@ -52,5 +52,8 @@ public class ScoreBoard extends TabFormat {
         score.setText(textDisplay+scoreDisplay);
     }
 
+    public static int getScoreDisplay(){
+        return scoreDisplay;
+    }
 
 }
