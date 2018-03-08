@@ -8,6 +8,7 @@ import displayformat.BigPanelFormat;
 import displayformat.Constants;
 import entity.Food;
 import entity.Snake;
+import maindisplay.MainFrame;
 import utilities.Ranking;
 
 import java.awt.*;
@@ -70,6 +71,8 @@ public class GameDisplay extends BigPanelFormat {
 
     public static void setIsGameOver(boolean cond){ isGameOver = cond; }
 
+    public static void setInEnterScore(boolean cond) { inEnterScore = cond; }
+
     public static void toGameOver(){
         cardLayout.show(container, "GameOver");
         GameOver.startMusic();
@@ -110,8 +113,12 @@ public class GameDisplay extends BigPanelFormat {
             isGameOver = false;
             inEnterScore = true;
         }
-        else{
+        else if(!inEnterScore){
             toStartGamePanel();
+        }else {
+            toStartGamePanel();
+            MainFrame.toMainMenu();
+            inEnterScore = false;
         }
 
     }

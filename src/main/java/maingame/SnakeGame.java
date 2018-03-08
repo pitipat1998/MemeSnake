@@ -317,7 +317,7 @@ public class SnakeGame extends JComponent implements MusicPlayer{
     public void setRunningNyanCat(boolean runningNyanCat) { this.runningNyanCat = runningNyanCat;}
 
     private static int randomTargetScore(){
-        return ThreadLocalRandom.current().nextInt(10,20) + currentScore;
+        return ThreadLocalRandom.current().nextInt(2,3) + currentScore;
     }
 
     private void checkBoundInNyan(){
@@ -325,12 +325,12 @@ public class SnakeGame extends JComponent implements MusicPlayer{
         int h = nyanCatImage.getHeight(this);
         double x = Snake.getHead().getX();
         double y = Snake.getHead().getY();
-        if ((x+w) + xSpeed >= Constants.DEFAULT_WIDTH || x + xSpeed < 0){
+        if ((x+w) + xSpeed > Constants.DEFAULT_WIDTH || x + xSpeed < 0){
             xSpeed = -(xSpeed);
             if(direction.equals("LEFT")) direction = "RIGHT";
             else if(direction.equals("RIGHT")) direction = "LEFT";
         }
-        else if((y+h) + ySpeed >= Constants.DEFAULT_HEIGHT || y + ySpeed < 0){
+        else if((y+h) + ySpeed > Constants.DEFAULT_HEIGHT || y + ySpeed < 0){
             ySpeed = -(ySpeed);
             if(direction.equals("UP")) direction = "DOWN";
             else if(direction.equals("DOWN")) direction = "UP";

@@ -51,13 +51,13 @@ public class MainFrame extends JFrame {
     public static void setCallByHighScore(boolean cond){ callByHighScore = cond; }
     public static List<Score> getHighScores() { return highScores; }
 
-    private static void updatHighScores(){
+    private static void updateHighScores(){
         highScores = HighScoreRepo.getHighScoreValue();
     }
 
     public static void toMainMenu(){
         cardLayout.show(container, "MainMenu");
-        updatHighScores();
+        updateHighScores();
         if (!callByHighScore) mainMenu.startMusic("music/titanicflute2.wav");
         else callByHighScore = false;
         mainMenu.requestFocusInWindow();

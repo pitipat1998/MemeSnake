@@ -1,7 +1,6 @@
 package additionalpanel;
 
 import displayformat.TabFormat;
-import maindisplay.MainFrame;
 import maingame.GameDisplay;
 import sharedactions.BackButton;
 
@@ -34,7 +33,7 @@ public class ScoreBoard extends TabFormat {
                 if (GameOver.getLoopSound().getClip() != null){
                     GameOver.stopMusic();
                 }
-                MainFrame.toMainMenu();
+                //MainFrame.toMainMenu();
             }
         });
         buttonPanel.add(backBtn, BorderLayout.EAST);
