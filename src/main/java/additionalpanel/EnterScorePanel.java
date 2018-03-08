@@ -62,9 +62,9 @@ public class EnterScorePanel extends SmallPanelFormat{
         @Override
         public void actionPerformed(ActionEvent e) {
             Score score = new Score(inpName.getText(), ScoreBoard.getScoreDisplay());
-            GameDisplay.gameReset();
             Ranking.addWinner(score);
             Ranking.updateHighScore();
+            GameDisplay.gameReset();
             inpName.setText(null);
         }
     }
