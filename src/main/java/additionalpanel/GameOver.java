@@ -35,7 +35,7 @@ public class GameOver extends SmallPanelFormat {
         label2.setFont(header);
         label2.setForeground(Color.RED);
 
-        JLabel label3 = new JLabel("Press Space Bar to Play Again");
+        JLabel label3 = new JLabel("Press Space Bar to Continue");
         label3.setHorizontalAlignment(JLabel.CENTER);
         label3.setFont(header2);
         label3.setForeground(Color.WHITE);

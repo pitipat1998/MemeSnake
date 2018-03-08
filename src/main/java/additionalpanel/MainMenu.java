@@ -6,6 +6,7 @@ import maindisplay.MainFrame;
 import sharedactions.MusicPlayer;
 import utilities.LoopSound;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -38,6 +39,17 @@ public class MainMenu extends BigPanelFormat implements MusicPlayer{
 
         startMusic("music/titanicflute2.wav");
         addMouseListener(new MouseHandler());
+
+        JPanel endPagePanel = new JPanel(new BorderLayout());
+        endPagePanel.setBackground(Color.BLACK);
+
+        JLabel labelTxt = new JLabel("Best with headphone");
+        labelTxt.setFont(new Font("Serif", Font.BOLD, 15));
+        labelTxt.setHorizontalAlignment(JLabel.CENTER);
+        labelTxt.setForeground(Color.WHITE);
+
+        endPagePanel.add(labelTxt);
+        add(endPagePanel, BorderLayout.PAGE_END);
     }
 
     @Override
@@ -96,6 +108,7 @@ public class MainMenu extends BigPanelFormat implements MusicPlayer{
                 stopMusic();
             }
             else if (highScoreBtn.contains(e.getPoint())){
+                MainFrame.toHighScorePanel();
             }
             else if (exitBtn.contains(e.getPoint())){
                 //boolean canExit = false;

@@ -29,11 +29,12 @@ public class ScoreBoard extends TabFormat {
         backBtn.addActionListener(new BackButton(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                MainFrame.toMainMenu();
+                EnterScorePanel.setInpName(null);
                 GameDisplay.gameReset();
                 if (GameOver.getLoopSound().getClip() != null){
                     GameOver.stopMusic();
                 }
+                MainFrame.toMainMenu();
             }
         });
         buttonPanel.add(backBtn, BorderLayout.EAST);

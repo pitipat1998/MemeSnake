@@ -1,5 +1,6 @@
 package maingame;
 
+import additionalpanel.EnterScorePanel;
 import additionalpanel.GameOver;
 import additionalpanel.ScoreBoard;
 import additionalpanel.StartGamePanel;
@@ -7,6 +8,7 @@ import displayformat.BigPanelFormat;
 import displayformat.Constants;
 import entity.Food;
 import entity.Snake;
+import utilities.Ranking;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -18,9 +20,12 @@ public class GameDisplay extends BigPanelFormat {
     private static SnakeGame snakeGame;
 
     private static StartGamePanel startGamePanel;
+    private static EnterScorePanel enterScorePanel;
+
     //GameOver
     private static GameOver gameOver;
     private static boolean isGameOver = false;
+    private static boolean inEnterScore = false;
 
     //Used to switch between panels
     private static Container container;
@@ -43,6 +48,7 @@ public class GameDisplay extends BigPanelFormat {
         snakeGame = new SnakeGame();
         startGamePanel = new StartGamePanel();
         gameOver = new GameOver();
+        enterScorePanel = new EnterScorePanel();
 
         snakeGame.setFocusable(true);
 
@@ -53,6 +59,7 @@ public class GameDisplay extends BigPanelFormat {
         container.add("StartGamePanel",startGamePanel);
         container.add("SnakeGame",snakeGame);
         container.add("GameOver", gameOver);
+        container.add("EnterScorePanel", enterScorePanel);
 
         //add component to this panel
         add(scoreBoard, BorderLayout.PAGE_END);
@@ -79,6 +86,11 @@ public class GameDisplay extends BigPanelFormat {
         ScoreBoard.resetScore();
     }
 
+    private static void toEnterScorePanel(){
+        cardLayout.show(container, "EnterScorePanel");
+        enterScorePanel.requestFocusInWindow();
+    }
+
     public static void gameReset(){
         Snake.clearTail();
         Snake.setHead(Constants.DEFAULT_WIDTH/2- Constants.SCALE,
@@ -96,6 +108,7 @@ public class GameDisplay extends BigPanelFormat {
         if(isGameOver){
             toGameOver();
             isGameOver = false;
+            inEnterScore = true;
         }
         else{
             toStartGamePanel();
@@ -115,9 +128,17 @@ public class GameDisplay extends BigPanelFormat {
             if(e.getKeyCode() == KeyEvent.VK_SPACE){
                 if (!running){
 //                    gameReset();
-                    ScoreBoard.resetScore();
-                    toSnakeGame();
-                    if(GameOver.getLoopSound().getClip() != null){ GameOver.stopMusic(); }
+                    if(inEnterScore){
+                        if(GameOver.getLoopSound().getClip() != null){ GameOver.stopMusic(); }
+                        toEnterScorePanel();
+                    }
+                    else {
+                        Ranking ranking = new Ranking();
+                        ScoreBoard.resetScore();
+                        toSnakeGame();
+                    }
+
+
                 }
             }
         }
