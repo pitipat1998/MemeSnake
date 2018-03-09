@@ -317,7 +317,7 @@ public class SnakeGame extends JComponent implements MusicPlayer{
     public void setRunningNyanCat(boolean runningNyanCat) { this.runningNyanCat = runningNyanCat;}
 
     private static int randomTargetScore(){
-        return ThreadLocalRandom.current().nextInt(2,3) + currentScore;
+        return ThreadLocalRandom.current().nextInt(15,25) + currentScore;
     }
 
     private void checkBoundInNyan(){
