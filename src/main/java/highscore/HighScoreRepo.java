@@ -10,7 +10,7 @@ public class HighScoreRepo {
         Connection conn = null;
         try {
             // db parameters
-            String url = "jdbc:sqlite:/home/fronky/IdeaProjects/MemeSnake/src/main/resources/highscore.db";
+            String url = "jdbc:sqlite:highscore.db";
             // create a connection to the database
             conn = DriverManager.getConnection(url);
 

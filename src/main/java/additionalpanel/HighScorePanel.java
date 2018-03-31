@@ -15,9 +15,9 @@ import java.util.List;
 public class HighScorePanel extends BigPanelFormat{
 
     private static List<Score> highScores;
-    private static Score number1;
-    private static Score number2;
-    private static Score number3;
+    private static Score number1 = null;
+    private static Score number2 = null;
+    private static Score number3 = null;
     private JButton backBtn;
     private Rectangle2D baseRect;
     private Rectangle2D topRect;
@@ -51,12 +51,33 @@ public class HighScorePanel extends BigPanelFormat{
 
     public static void getHighScore(){
         highScores = MainFrame.getHighScores();
-        number1 = highScores.get(0);
-        number2 = highScores.get(1);
-        number3 = highScores.get(2);
-        for (Score score : highScores){
-            score.info();
+        try{
+            number1 = highScores.get(0);
+            number2 = highScores.get(1);
+            number3 = highScores.get(2);
+        }catch (IndexOutOfBoundsException e){
+            if(number1 != null){
+                if(number2 != null){
+                    if(number3 != null){
+                    }
+                    else{
+                        number3 = new Score("No one", 0);
+                    }
+                }
+                else {
+                    number2 = new Score("No one", 0);
+                    number3 = new Score("No one", 0);
+                }
+            }
+            else {
+                number1 = new Score("No one", 0);
+                number2 = new Score("No one", 0);
+                number3 = new Score("No one", 0);
+            }
+
+
         }
+//
     }
 
     @Override
